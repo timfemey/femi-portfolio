@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import Link from "next/link";
 import { LazyMotion, domAnimation, useInView } from "framer-motion";
 import { WelcomeAnimation } from "./IntroAninmation";
 import { useScrollTo } from "../hooks";
@@ -15,12 +14,12 @@ export function WelcomeSection() {
   const isTabletUp = useMediaQuery("min-width: 768px");
 
   let [count, setCount] = useState(0);
-  const [text] = useState([
-    "build performant & scalable servers with Nodejs and Golang",
-    "conversant with Systems Architecture ",
+  const text = [
+    "build scalable servers with Nodejs and Golang",
+    "am conversant with Systems Architecture ",
     "build great user experiences on the web",
     "develop next-gen websites with Nextjs",
-  ]);
+  ];
 
   const onClick = (e: any) => scrollToEl(e);
 
@@ -52,7 +51,7 @@ export function WelcomeSection() {
               }}
             >
               <p>
-                Hi, I&apos;m <mark>Femi</mark> a <mark>passionate</mark>{" "}
+                Hi, I&apos;m Femi a passionate{" "}
                 software developer.
               </p>
             </h1>

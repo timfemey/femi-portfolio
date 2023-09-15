@@ -1,12 +1,10 @@
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-import { useTheme } from "next-themes";
 
 export function WelcomeAnimation() {
 	const ref = useRef(null);
-	const isInView = useInView(ref, { once: true });
-	const { theme, systemTheme } = useTheme();
-	const colorMode = theme === "system" ? systemTheme : theme;
+	const isInView = useInView(ref, { once: true });	
+	const colorMode = "dark";
 	const darkThemeColor = colorMode === "dark";
 
 	return (
