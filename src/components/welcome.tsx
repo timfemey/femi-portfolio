@@ -50,10 +50,7 @@ export function WelcomeSection() {
                 transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
               }}
             >
-              <p>
-                Hi, I&apos;m Femi a passionate{" "}
-                software developer.
-              </p>
+              <p>Hi, I&apos;m Femi a passionate software developer.</p>
             </h1>
 
             <div className="mt-3 relative flex flex-col overflow-hidden">
@@ -102,15 +99,9 @@ export function WelcomeSection() {
             >
               Stick around to see some of my work.
             </p> */}
-            {/* <div
-              ref={ref}
-              style={{
-                transform: isInView ? "none" : "translateY(50px)",
-                opacity: isInView ? 1 : 0,
-                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-              }}
-            >
-              <Link
+           
+             
+              {/* <Link
                 href="#projects"
                 onClick={onClick}
                 tabIndex={0}
@@ -118,8 +109,8 @@ export function WelcomeSection() {
                 aria-label="Latest projects"
               >
                 See my latest projects
-              </Link>
-            </div> */}
+              </Link> */}
+            
           </div>
 
           {isTabletUp && <WelcomeAnimation />}
