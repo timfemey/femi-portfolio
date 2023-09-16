@@ -83,9 +83,9 @@ export function WelcomeSection() {
                   >
                     {text.map(
                       (element) =>
-                        isTabletUp && (
+                       
                           <TextElement key={element} element={element} />
-                        )
+                        
                     )}
                   </span>
                 </p>
