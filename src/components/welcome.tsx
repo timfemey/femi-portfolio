@@ -8,7 +8,8 @@ import Hero from "./hero";
 export function WelcomeSection() {
   const ref = useRef(null);
   const introRef = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  // const isInView = useInView(ref, { once: true });
+  const isInView=true
   const { scrollToEl } = useScrollTo();
   const isTabletUp = useMediaQuery("min-width: 768px");
 
@@ -81,12 +82,9 @@ export function WelcomeSection() {
                       left: "13px",
                     }}
                   >
-                    {text.map(
-                      (element) =>
-                       
-                          <TextElement key={element} element={element} />
-                        
-                    )}
+                    {text.map((element) => (
+                      <TextElement key={element} element={element} />
+                    ))}
                   </span>
                 </p>
               </div>
