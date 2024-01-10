@@ -14,7 +14,7 @@ const Projects: React.FunctionComponent<IProjectsProps> = (props) => {
                 <div className="project-header">
                   <i className="fa-regular fa-folder-open folder-icon"></i>
                   <div className="small-icons">
-                    <a href={project.gitHubLink}>
+                    <a href={project.gitHubLink} target="_blank">
                       <i className="fa-brands fa-github"></i>
                     </a>
                   </div>
