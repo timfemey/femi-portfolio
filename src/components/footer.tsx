@@ -7,7 +7,15 @@ const Footer: React.FunctionComponent<IAppProps> = (props) => {
       <div className="footer-container">
         <p>© {new Date().getFullYear()} Femi Portfolio</p>
         <div className="social_icons">
-          
+          <a
+            href="mailto:isholaobafemi@gmail.com"
+            aria-label="Email"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa-solid fa-envelope"></i>
+          </a>
+
           <a
             href="https://github.com/timfemey"
             aria-label="GitHub"

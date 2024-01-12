@@ -15,13 +15,22 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
           <h1>Hey, I&apos;m Femi 👋</h1>
           <p>
             I&apos;m a software developer based in Edo, Nigeria. I specialize in
-            building exceptional websites, building scalable servers and developing robust system architecture for
-            applications, and everything in between.
+            building exceptional websites, building scalable servers and
+            developing robust system architecture for applications, and
+            everything in between.
           </p>
           <div className="social-icons">
-           
             <a
-              href="https://github.com/olawanlejoel"
+              href="mailto:isholaobafemi@gmail.com"
+              aria-label="Email"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa-solid fa-envelope"></i>
+            </a>
+
+            <a
+              href="https://github.com/timfemey"
               aria-label="GitHub"
               target="_blank"
               rel="noopener noreferrer"
@@ -29,7 +38,7 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
               <i className="fa-brands fa-github"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/olawanlejoel/"
+              href="https://www.linkedin.com/in/obafemi-ishola/"
               aria-label="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
@@ -39,7 +48,7 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
           </div>
         </div>
       </div>
-      <br/>
+      <br />
     </>
   );
 };
