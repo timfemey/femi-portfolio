@@ -14,6 +14,14 @@ const Projects: React.FunctionComponent<IProjectsProps> = (props) => {
                 <div className="project-header">
                   <i className="fa-regular fa-folder-open folder-icon"></i>
                   <div className="small-icons">
+                    {project.websiteLink == "" ? (
+                      <></>
+                    ) : (
+                      <a href={project.websiteLink} target="_blank">
+                        <i className="fa-solid fa-link"></i>
+                      </a>
+                    )}
+
                     <a href={project.gitHubLink} target="_blank">
                       <i className="fa-brands fa-github"></i>
                     </a>
