@@ -9,7 +9,7 @@ export function WelcomeSection() {
   const ref = useRef(null);
   const introRef = useRef(null);
   // const isInView = useInView(ref, { once: true });
-  const isInView=true
+  const isInView = true;
   const { scrollToEl } = useScrollTo();
   const isTabletUp = useMediaQuery("min-width: 768px");
 
@@ -51,7 +51,7 @@ export function WelcomeSection() {
                   transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
                 }}
               >
-                <p>Hi, I&apos;m Femi a passionate software developer.</p>
+                <p>Hi 👋, I&apos;m Femi a passionate software developer.</p>
               </h1>
 
               <div className="mt-3 relative flex flex-col overflow-hidden">
